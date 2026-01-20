@@ -55,6 +55,16 @@ a{
     border: 3px solid rgb(108, 42, 4);
 }
 
+.pic2{
+    display: inline-block;
+    border: 3px solid rgb(104, 0, 112);
+}
+
+.pic3{
+    display: inline-block;
+    border: 3px solid rgb(1, 0, 1);
+}
+
 .inlinelist{
     margin: 2%;
 }
