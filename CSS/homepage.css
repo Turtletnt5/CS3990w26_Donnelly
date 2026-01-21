@@ -106,3 +106,15 @@ a{
     list-style: disc;
     width: 7.5%;
 }
+
+.alpa{
+    margin: 2%;
+}
+
+.alpa ol{
+    list-style-type: upper-alpha;
+}
+
+.alpa li{
+    list-style-type: upper-alpha;
+}
