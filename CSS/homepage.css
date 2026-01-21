@@ -76,9 +76,15 @@ a{
     border: 1px outset rgb(103, 102, 102) ;
 }
 
+.picfloat{
+    float: left;
+    border: 3px solid rgb(108, 42, 4);
+}
+
 .pic1{
     display: inline-block;
     border: 3px solid rgb(108, 42, 4);
+    
 }
 
 .pic2{
