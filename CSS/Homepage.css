@@ -70,19 +70,24 @@
 }
 
 img.aside1{
-    width: 100%;
+    margin: 2.5%;
+    width: 95%;
     position: sticky;
     top: 0px;
 }
 
 .main{
     margin: 1.5%;
-    
 }
 
 .main ul{
     margin: 0.5%;
-    padding-left: 25%;
+    padding-left: 26%;
+}
+
+.main ol{
+    margin: 0.5%;
+    padding-left: 26%;
 }
 
 .main li{
@@ -100,13 +105,13 @@ img.aside1{
 
 .aside2{
     padding: 1%;
-    background-color: #7ff4a6;
+    background-color: inherit;
 }
 
 .aside2 ol{
     margin: 2.5%;
     
-    background-color: #7ff4a6;
+    background-color: inherit;
 }
 
 .aside2 li{
@@ -130,10 +135,72 @@ img.aside1{
 
 .containerleft{
     
-    border: 3px cyan solid ;
+    width: 20%;
+    height: 750px;
+    margin: 2.5%;
+    top: 20%;
+    float: left;
+    background-color: #7ff4a6;
+}
+
+.containerright{
     width: 20%;
     height: 1000px;
     margin: 2.5%;
     top: 20%;
-    float: left;
+    float: right;
+}
+
+.aside3{
+    margin: 0%;
+    width: 100%;
+    height: 500px;
+    background-color: rgb(200, 199, 199) !important;
+    position: relative;
+
+}
+
+.aside3 h2 {
+    background-color: inherit;
+}
+
+.aside3 h2 b{
+    background-color: inherit !important;
+    margin: 2.5%;
+}
+
+.aside3 ul{
+    background-color: inherit !important;
+    margin: 0%;
+    padding: 2.5%;
+    
+    list-style-position: inside;
+}
+
+.aside3 li{
+    background-color: aquamarine;
+    padding: 3%;
+    font-size: larger;
+    list-style-image: url('/favicons/checkboxsUnchecked.png');
+}
+
+.aside3 li:nth-child(odd){
+    background-color: rgb(111, 218, 182);
+    font-size: larger;
+}
+
+.aside3 li.checked{
+    background-color: lightgray;
+    font-size: larger;
+    list-style-image: url('/favicons/checkboxsChecked.png') !important; 
+}
+
+.aside3 li span{
+    padding-left: 5%;
+    background-color: rgba(1, 1, 1, 0);
+}
+
+.containerright img{
+    width: 95%;
+    margin: 2.5%;
 }
