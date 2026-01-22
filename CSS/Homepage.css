@@ -1,0 +1,54 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(29, 28, 28);
+    color: #007e00;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    margin: 2.5%;
+
+}
+
+.header img{
+    position: absolute;
+    width: 10%;
+
+}
+
+.header h1{
+    text-align: center;
+    position: static;
+    font-size: 300%;
+    padding: 2.5%;
+    
+}
+
+.menu {
+    margin: 2.5%;
+    
+}
+
+.menu ul{
+    
+    float: left;
+    list-style: none;
+    width: 100%;
+    
+}
+
+.menu li{
+    color: rgb(5, 128, 99);
+    padding: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-left: 1%;
+    background-color: rgb(54, 54, 54) !important;
+    border: 5px outset rgb(103, 102, 102) ;
+    float: left;
+    border-radius: 10px;
+    font-size: larger;
+    
+}
