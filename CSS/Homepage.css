@@ -66,10 +66,28 @@
 .aside1{
     margin: 1.5%;
     top: 20px;
+    float: left;
 }
 
-.aside1 img{
+img.aside1{
     padding: 1%;
     width: 20%;
     position: sticky;
+}
+
+.main{
+    margin: 1.5%;
+    
+}
+
+.main li{
+    color: #7ff4a6 !important;
+}
+
+.main b{
+    color: #7ff4a6 !important;
+}
+
+.main h2{
+    color: #25934a !important;
 }
