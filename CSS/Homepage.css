@@ -57,6 +57,7 @@
 .menu a{
     background-color: rgba(54, 54, 54, 0);
     color: rgb(5, 128, 99);
+    text-decoration: none;
 }
 
 .menu li:hover{
@@ -210,7 +211,86 @@ img.aside1{
 .footer {
     background-color: rgb(0, 24, 19);
     width: 100%;
-    height: 15%;
+    height: 12%;
     position: fixed;
     bottom: 0%;
+}
+
+.menu2 {
+    margin: 1%;
+    width: 30%;
+    height: 80%;
+    background-color: rgb(54, 54, 54, 0) !important;
+    display: inline-block;
+}
+
+.menu2 ul{
+    background-color: inherit;
+    display: block;
+}
+
+.menu2 li{
+    color: rgb(5, 128, 99);
+    padding: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-left: 3%;
+    background-color: rgb(54, 54, 54) !important;
+    border: 5px outset rgb(103, 102, 102) ;
+    float: left;
+    border-radius: 10px;
+    font-size: medium;
+    list-style:none;
+}
+
+.menu2 a{
+    background-color: rgba(54, 54, 54, 0);
+    color: rgb(5, 128, 99);
+    text-decoration: none;
+}
+
+.menu2 li:hover{
+    background-color: rebeccapurple !important;
+    text-decoration: underline;
+} 
+
+.network{
+    width: 20%;
+    height: 80%;
+    margin: 1%;
+    float: right;
+    
+}
+
+.network li{
+    padding: 1%;
+    
+    margin-left: 3%;
+    width: 15%;
+    height: 10%;
+    background-color: rgb(54, 54, 54) !important;
+    border: 5px outset rgb(103, 102, 102);
+    list-style: none;
+    display: inline-block;
+}
+
+.network li.discord:hover{
+    background-color: rgb(88, 101, 242) !important;
+}
+
+.network li.steam:hover{
+    background-color: rgb(23, 29, 37) !important;
+}
+
+.network li.redit:hover{
+    background-color: rgb(253, 66, 0) !important;
+}
+
+.network img{
+    width: 100%;
+    background-color: inherit;
+}
+
+.network a{
+    background-color: inherit;
 }
