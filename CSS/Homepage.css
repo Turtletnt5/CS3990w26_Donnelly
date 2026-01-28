@@ -264,7 +264,11 @@ img.aside1{
     height: 80%;
     margin: 1%;
     float: right;
-    
+    background-color: inherit;
+}
+
+.network ul{
+    background-color: inherit;
 }
 
 .network li{
