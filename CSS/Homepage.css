@@ -196,6 +196,7 @@ img.aside1{
     font-size: larger;
     list-style-image: url('/favicons/checkboxsChecked.png') !important; 
     overflow: auto;
+    text-decoration: line-through;
 }
 
 .aside3 li.checked:nth-child(odd){
