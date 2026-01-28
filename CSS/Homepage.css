@@ -184,6 +184,7 @@ img.aside1{
     font-size: larger;
     list-style-image: url('/favicons/checkboxsUnchecked.png');
     overflow: auto;
+    color: red;
 }
 
 .aside3 li:nth-child(odd){
@@ -196,15 +197,19 @@ img.aside1{
     font-size: larger;
     list-style-image: url('/favicons/checkboxsChecked.png') !important; 
     overflow: auto;
-    text-decoration: line-through;
 }
 
 .aside3 li.checked:nth-child(odd){
     background-color: rgb(169, 168, 168);
 }
 
+.aside3 li.checked span{
+    text-decoration: line-through;
+}
+
 .aside3 li span{
     padding-left: 5%;
+    padding-right: 5%;
     background-color: rgba(1, 1, 1, 0);
 }
 
