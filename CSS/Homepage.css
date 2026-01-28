@@ -198,6 +198,10 @@ img.aside1{
     overflow: auto;
 }
 
+.aside3 li.checked:nth-child(odd){
+    background-color: rgb(169, 168, 168);
+}
+
 .aside3 li span{
     padding-left: 5%;
     background-color: rgba(1, 1, 1, 0);
