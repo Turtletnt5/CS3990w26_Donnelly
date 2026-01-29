@@ -1,0 +1,31 @@
+
+
+article:nth-of-type(1){
+    background-color:  rgb(66,  37,  2);
+}
+
+article:nth-of-type(1) h2{
+    color: rgb(245, 201, 147);
+    font-style: italic;
+}
+
+article:nth-of-type(1) div{
+    background-color: rgb(245, 201, 147);
+    margin-left: 1%;
+}
+
+
+article:nth-of-type(2){
+    background-color: rgb(245, 201, 147);
+}
+
+article:nth-of-type(2) h3{
+    font-style: italic;
+    color: rgb(66,  37,  2);
+}
+
+article:nth-of-type(2) div{
+    background-color: rgb(66,  37,  2);
+    margin-left: 1%;
+    color: rgb(245, 201, 147);
+}
