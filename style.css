@@ -179,5 +179,14 @@ article:nth-of-type(2) div.task3 div.correct::before{
 }
 
 article:nth-of-type(2) div.task3 span:first-of-type::before{
-    
+    content: '>>';
+}
+
+article:nth-of-type(2) div.task3 span:first-of-type::after{
+    content: ' /';
+}
+
+article:nth-of-type(2) div.task3 span:nth-of-type(2){
+    margin-left: 0.5%;
+    margin-right: 0.5%;
 }
