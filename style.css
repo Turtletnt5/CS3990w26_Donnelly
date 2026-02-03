@@ -55,6 +55,29 @@ article:nth-of-type(1) div.task1 div::after{
     margin-bottom: -5%;
 }
 
+
+article:nth-of-type(1) .task2 li{
+    margin: 0.5%;
+    
+}
+
+article:nth-of-type(1) .task2 li:nth-of-type(1)::first-line{
+    background-color: rgb(194, 109, 5);
+
+}
+
+article:nth-of-type(1) .task2 li:nth-of-type(4){
+    font-style: italic;
+}
+
+article:nth-of-type(1) .task2 li:nth-of-type(odd){
+    font-weight: bold;
+}
+
+article:nth-of-type(1) .task2 li:not(.special){
+    color: rgb(165, 42, 69);
+}
+
 article:nth-of-type(2){
     background-color: rgb(245, 201, 147);
 }
