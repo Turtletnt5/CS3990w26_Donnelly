@@ -152,3 +152,32 @@ article:nth-of-type(2) div.task2 li:nth-of-type(even)::marker{
     content: "😊 ";
 
 }
+
+article:nth-of-type(2) div.task3 div{
+    position: relative;
+    background-color: rgb(83, 45, 2);
+    padding: 1%;
+}
+
+article:nth-of-type(2) div.task3 div.wrong::before{
+    position: absolute;
+    content: 'X';
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    left: 50%;
+    top: -25%;
+    font-size: 550%;
+}
+
+article:nth-of-type(2) div.task3 div.correct::before{
+    position: absolute;
+    content: '\2713';
+    color: rgb(23, 170, 3);
+    left: 50%;
+    top: -45%;
+    font-size: 550%;
+}
+
+article:nth-of-type(2) div.task3 span:first-of-type::before{
+    
+}
