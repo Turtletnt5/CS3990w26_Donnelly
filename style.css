@@ -22,7 +22,7 @@ article:nth-of-type(1) div:hover{
     border: 3px red solid;
 }
 
-article:hover div:not(:hover){
+article:has(div:hover) div:not(:hover){
     opacity: 0.5;
 }
 
@@ -96,3 +96,54 @@ article:nth-of-type(2) div{
 article:nth-of-type(2) div:hover{
     border: 3px pink dotted;
 }
+
+article:nth-of-type(2) div.task1 {
+    padding: 1%;
+    
+}
+
+article:nth-of-type(2) div.task1 blockquote{
+    font-style: italic;
+    padding: 5%;
+    position: relative;
+}
+
+article:nth-of-type(2) div.task1 blockquote::before{
+    height: 60px;
+    width: 60px;
+    background-color: rgb(228, 131, 13);
+    border-radius: 50%;
+    position: absolute;
+    content: open-quote;
+    font-size: 50px;
+    top: 0px;
+    left: -1%;
+    text-align: center;
+}
+
+article:nth-of-type(2) div.task1 blockquote::after{
+    height: 60px;
+    width: 60px;
+    background-color: rgb(228, 131, 13);
+    border-radius: 50%;
+    position: absolute;
+    content: close-quote;
+    font-size: 50px;
+    bottom: 1%;
+    right: -1%;
+    text-align: center;
+}
+
+article:nth-of-type(2) div.task1:has(blockquote:hover) h4{
+    color:  rgb(184, 59, 2);
+    
+}
+
+article:nth-of-type(2) div.task1:has(blockquote:hover) blockquote::before{
+    background-color:  rgb(184, 59, 2);
+}
+
+article:nth-of-type(2) div.task1:has(blockquote:hover) blockquote::after{
+    background-color:  rgb(184, 59, 2);
+}
+
