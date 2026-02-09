@@ -11,3 +11,25 @@
     font-size: x-large;
 }
 
+.main {
+    display: flex;
+}
+
+.a1 {
+    flex-grow: 1;
+}
+
+.a1 li{
+    background-color: rgb(165, 80, 207);
+    color: white;
+    margin: 5px;
+    padding: 5px;
+}
+
+.a2 {
+    flex-grow: 2;
+}
+
+.a3 {
+    flex-grow: 1;
+}
