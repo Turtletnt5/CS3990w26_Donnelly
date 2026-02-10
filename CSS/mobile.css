@@ -1,0 +1,231 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.header {
+    text-align: center;
+    background-color: rgb(76, 6, 111);
+    color: white;
+    padding: 40px;
+    font-size: x-large;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.a1 {
+    flex-grow: 1;
+}
+
+.a1 li{
+    background-color: rgb(165, 80, 207);
+    color: white;
+    margin: 5px;
+    padding: 5px;
+    padding-right: 0;
+    overflow-wrap: normal;
+}
+
+.a1 li:hover{
+    background-color: rgb(79, 19, 111);
+    color: rgb(165, 80, 207);
+}
+
+.a2 {
+    flex-grow: 3;
+    margin: 10px;
+    
+}
+
+.a2 h1{
+    color: rgb(103, 33, 102);
+}
+
+.a2 p{
+    color: rgb(103, 33, 102);
+}
+
+.a2 .menu ul{
+    perspective: 500px;
+}
+
+.a2 .menu li{
+    display: inline-block;
+    background-color: rgb(165, 80, 207);
+    color: rgb(79, 19, 111);
+    border: 2px solid lightgrey;
+    border-radius: 10px;
+    text-wrap-mode: nowrap;
+    padding: 5px;
+    transform: rotate3d(1,0.01,0,45deg);
+    box-shadow: 0 5px 5px -2px black;
+}
+
+.a2 .menu li:hover{
+    color: white;
+    transform: scale(1);
+    background-image: linear-gradient(180deg, rgb(225, 168, 232), rgb(81, 10, 72) );
+}
+
+.a2 .menu .dropdown{
+    position: relative;
+}
+
+.a2 .menu li div.dropdownContent {
+    display: none;
+    position: absolute;
+}
+
+.a2 .menu .dropdown:hover .dropdownContent{
+    display: block;
+    background-color: rgb(165, 80, 207);
+    padding: 10px;
+}
+
+.a2 .menu li:hover div.dropdownContent a{
+    background-color: rgb(165, 80, 207);
+
+}
+
+.a2 .content{
+    position: relative;
+    width: 90%;
+    margin: 30px;
+}
+
+.a2 .content div{
+
+    display: none;
+}
+
+.a2 .content div.default{
+    display:block;
+}
+
+.a2 .content .default img{
+    width: 80%;
+    padding: 0;
+}
+
+.a2 .content div:target{
+    display: block;
+}
+
+.a2 .content:has(div:target) div.default{
+    display: none;
+}
+
+.a2 .menu a{
+    color: inherit;
+    font-style: none;
+    text-decoration: none;
+}
+
+.a2 .content .PaT ul{
+    margin: 20px;
+}
+
+.a2 .content .PaT li{
+    list-style: none;   
+}
+
+.a2 .content .PaT li img{
+    height: 20px;
+    padding-right: 5px;
+}
+
+
+
+.a3 {
+    flex-grow: 1;
+    background-color: rgb(165, 80, 207);
+}
+
+.a3 h3{
+    color: white;
+    text-align: center;
+    padding: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.a3 .jobs{
+    display: flex;
+    flex-flow: column nowrap;
+    
+}
+
+.a3 .jobs div.item{
+    flex-grow: 1;
+    padding: 10px;
+}
+
+.a3 .jobs .item div{
+
+    border: 3px solid rgb(119, 78, 139);
+    border-top-right-radius: 25px;
+    color: white;
+    
+
+}
+
+.a3 .jobs .item p{
+    color: white;
+    padding: 10px;
+}
+
+.a3 .jobs .item p.pay{
+    color: white;
+    padding: 10px;
+    text-align: right;
+}
+
+.a3 .jobs .item div p{
+
+    text-align: center;
+    font-size: medium;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+.a3 .jobs .item div h4{
+
+    font-size: large;
+    width: 80%;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.a3 .jobs .item div h4.red{
+
+    background-color: rgb(143, 6, 6);
+}
+
+.a3 .jobs .item div h4.green{
+
+    background-color: rgb(153, 248, 58);
+    color: black;
+
+}
+.footer{
+    position: fixed;
+    bottom: 0px;
+    background-color: rgb(165, 80, 207);
+    width: 100%;
+}
+
+.footer .left{
+    float: left;
+    padding: 10px;
+}
+
+.footer .right{
+    float: right;
+    padding: 10px;
+}
