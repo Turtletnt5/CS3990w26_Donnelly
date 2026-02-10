@@ -88,11 +88,11 @@
 
 .a2 .menu li:hover div.dropdownContent a{
     background-color: rgb(165, 80, 207);
-
+    
 }
 
 .a2 .content{
-    position: relative;
+    position: static;
     width: 90%;
     margin: 30px;
 }

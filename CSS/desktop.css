@@ -76,21 +76,33 @@
 .a2 .menu li div.dropdownContent {
     display: none;
     position: absolute;
+    top: 30px;
+    width: 125px;
+    height: 50px;
 }
 
 .a2 .menu .dropdown:hover .dropdownContent{
     display: block;
-    background-color: rgb(165, 80, 207);
-    padding: 10px;
 }
 
 .a2 .menu li:hover div.dropdownContent a{
     background-color: rgb(165, 80, 207);
+    width: 100%;
+    padding: 11px;
+    position: absolute;
+}
 
+.a2 .menu li:hover div.dropdownContent a:nth-of-type(2){
+    top: 40px;
+}
+
+.a2 .menu .dropdown:hover div.dropdownContent:has(a:hover) :not(a:hover){
+    background-color: rgb(79, 19, 111);
+    color: rgb(165, 80, 207);
 }
 
 .a2 .content{
-    position: relative;
+    position: static;
     width: 600px;
     margin: 30px;
 }
