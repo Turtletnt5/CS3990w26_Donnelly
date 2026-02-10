@@ -39,6 +39,14 @@
     
 }
 
+.a2 h1{
+    color: rgb(103, 33, 102);
+}
+
+.a2 p{
+    color: rgb(103, 33, 102);
+}
+
 .a2 .menu ul{
     perspective: 500px;
 }
@@ -52,6 +60,7 @@
     text-wrap-mode: nowrap;
     padding: 5px;
     transform: rotate3d(1,0.01,0,45deg);
+    transform: matrix3d();
     box-shadow: 0 5px 5px -2px black;
 }
 
@@ -61,16 +70,61 @@
     background-image: linear-gradient(180deg, rgb(225, 168, 232), rgb(81, 10, 72) );
 }
 
+.a2 .menu input{
+    background-color:transparent;
+    border: none;
+    color: inherit;
+    position: absolute;
+    opacity: 0;
+}
+
 .a2 .content{
     position: relative;
     width: 600px;
     margin: 30px;
 }
 
-.a2 .content .default img{
+.a2 .content div{
     position: absolute;
+    display: none;
+}
+
+.a2 .content div.default{
+    display:block;
+}
+
+.a2 .content .default img{
     width: 100%;
 }
+
+.a2 .content div:target{
+    display: block;
+}
+
+.a2 .content:has(div:target) div.default{
+    display: none;
+}
+
+.a2 .menu a{
+    color: inherit;
+    font-style: none;
+    text-decoration: none;
+}
+
+.a2 .content .PaT ul{
+    margin: 20px;
+}
+
+.a2 .content .PaT li{
+    list-style: none;   
+}
+
+.a2 .content .PaT li img{
+    height: 20px;
+    padding-right: 5px;
+}
+
+
 
 .a3 {
     flex-grow: 1;

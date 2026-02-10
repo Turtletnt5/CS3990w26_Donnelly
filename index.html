@@ -11,7 +11,7 @@
             Assignment 1 HomePage
         </title>
 
-        <link rel="stylesheet" href="CSS/desktop.css" media="all">
+        <link rel="stylesheet" href="CSS/desktop.css" media="(min-width:1015px)">
     </head>
 
     <body>
@@ -36,16 +36,47 @@
             <div class="a2">
 
                 <ul class="menu">
-                    <li>Home</li>
-                    <li>Provinces and territories</li>
-                    <li>My Alberta</li>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#Pat">Provinces and territories</a></li>
+                    <li><a href="">My Alberta</a></li>
                 </ul>
 
                 <div class="content">
 
-                    <div class="default">
+                    <div class="default" id="default">
                         <img src="img/canada.png" alt="canada flag shaped as canada">
                     </div>
+
+                    <div class="Home" id="Home">
+                        <h1>Get To know Canada</h1>
+                        <p>Alberta is one of the few places in the world that there are <b>Zero</b> rats.
+                            Alberta main export is oil. Alberta is often referred to as the Texas of Canada</p>
+                    </div>
+
+                    <div class="PaT" id="Pat">
+                        <h1>Learn more about Canada's provinces and territories</h1>
+                        <p>Canada is a country in North America.
+                            Its ten provinces and three territories extend from
+                            the Atlantic Ocean to the Pacific Ocean and northward into the Arctic Ocean,
+                            making it the second-largest country by total area,
+                            with the longest coastline of any country.</p>
+                        <ul>
+                            <li><img src="img/Alberta.png" alt="Alberta flag">Alberta</li>
+                            <li><img src="img/BC.png" alt="British Columbia flag">British Columbia</li>
+                            <li><img src="img/Manatoba.png" alt="Manitoba flag">Manitoba</li>
+                            <li><img src="img/NewBrunswick.png" alt="New Brunswick flag">New Brunswick</li>
+                            <li><img src="img/Newfoundland and labidour.png" alt="Newfoundland and Labrador flag">Newfoundland and Labrador</li>
+                            <li><img src="img/NovaScotia.png" alt="Nova Scotia flag">Nova Scotia</li>
+                            <li><img src="img/Northwest Territories.png" alt="Northwest Territories flag">Northwest Territories</li>
+                            <li><img src="img/Nunavut.png" alt="Nunavut flag">Nunavut</li>
+                            <li><img src="img/Ontario.png" alt="Ontario flag">Ontario</li>
+                            <li><img src="img/Prince Edward Island.png" alt="Prince Edward Island flag">Prince Edward Island</li>
+                            <li><img src="img/Quebec.png" alt="Quebec flag">Quebec</li>
+                            <li><img src="img/Saskatchewan.png" alt="Saskatchewan flag">Saskatchewan</li>
+                            <li><img src="img/Yukon.png" alt="Yukon flag">Yukon</li>
+                        </ul>
+                    </div>
+
 
 
                 </div>
