@@ -1,0 +1,69 @@
+.parent{
+  display: grid;
+  grid-template-columns: 25% 75%;
+  gap: 10px;
+  padding: 1em;
+  background-color:rgb(34, 228, 60);
+}
+
+.case2{
+  background-color:rgb(2, 65, 10);
+  grid-template-columns: repeat(2, 40% [col-start]);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto 100px 30%;
+  grid-template-rows: 200px auto;
+  gap: 10px;
+  background-color:aqua;
+  padding: 1em;
+}
+
+.box{
+  background-color: purple;
+  color: white;
+  border-radius: 5px;
+}
+
+.parent>.box{
+background-color:rgb(4, 92, 15);
+}
+
+.case2>.box{
+background-color:rgb(6, 221, 35);
+color:rgb(31, 61, 1)
+}
+
+
+
+
+.container1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 50px 1fr;
+  gap: 5px;
+  background-color:rgb(60, 5, 179);
+
+}
+
+.container2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 200px);
+  gap: 10px;
+  background-color:brown;
+  padding: 1em; /*scales based on the current element’s font size*/
+  max-width: 70rem; /*relative to the font size of the root element */
+  margin: 1rem;
+}
+
+
+.container3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+  background-color:blueviolet;
+  padding: 1em; /*scales based on the current element’s font size*/
+  max-width: 70rem; /*relative to the font size of the root element */
+  margin: 1rem;
+}
