@@ -135,7 +135,9 @@
     padding-right: 5px;
 }
 
-
+.a2 .content .Parks{
+    color: rgb(79, 19, 111);
+}
 
 .a3 {
     flex-grow: 1;
