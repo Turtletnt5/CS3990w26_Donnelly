@@ -60,7 +60,6 @@
     text-wrap-mode: nowrap;
     padding: 5px;
     transform: rotate3d(1,0.01,0,45deg);
-    transform: matrix3d();
     box-shadow: 0 5px 5px -2px black;
 }
 
@@ -70,12 +69,24 @@
     background-image: linear-gradient(180deg, rgb(225, 168, 232), rgb(81, 10, 72) );
 }
 
-.a2 .menu input{
-    background-color:transparent;
-    border: none;
-    color: inherit;
+.a2 .menu .dropdown{
+    position: relative;
+}
+
+.a2 .menu li div.dropdownContent {
+    display: none;
     position: absolute;
-    opacity: 0;
+}
+
+.a2 .menu .dropdown:hover .dropdownContent{
+    display: block;
+    background-color: rgb(165, 80, 207);
+    padding: 10px;
+}
+
+.a2 .menu li:hover div.dropdownContent a{
+    background-color: rgb(165, 80, 207);
+
 }
 
 .a2 .content{
@@ -85,7 +96,7 @@
 }
 
 .a2 .content div{
-    position: absolute;
+
     display: none;
 }
 
@@ -200,4 +211,19 @@
     color: black;
 
 }
+.footer{
+    position: fixed;
+    bottom: 0px;
+    background-color: rgb(165, 80, 207);
+    width: 100%;
+}
 
+.footer .left{
+    float: left;
+    padding: 10px;
+}
+
+.footer .right{
+    float: right;
+    padding: 10px;
+}
