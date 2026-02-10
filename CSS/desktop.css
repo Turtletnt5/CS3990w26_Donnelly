@@ -39,10 +39,11 @@
     
 }
 
-
+.a2 .menu ul{
+    perspective: 500px;
+}
 
 .a2 .menu li{
-    
     display: inline-block;
     background-color: rgb(165, 80, 207);
     color: rgb(79, 19, 111);
@@ -50,8 +51,14 @@
     border-radius: 10px;
     text-wrap-mode: nowrap;
     padding: 5px;
-    transform: rotate(180);
+    transform: rotate3d(1,0.01,0,45deg);
     box-shadow: 0 5px 5px -2px black;
+}
+
+.a2 .menu li:hover{
+    color: white;
+    transform: scale(1);
+    background-image: linear-gradient(180deg, rgb(225, 168, 232), rgb(81, 10, 72) );
 }
 
 .a2 .content{
