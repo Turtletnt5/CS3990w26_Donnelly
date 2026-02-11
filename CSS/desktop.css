@@ -147,6 +147,15 @@
     padding-right: 5px;
 }
 
+.a2 .content .PaT li span{
+    display: none;
+    font-style: italic;   
+}
+
+.a2 .content .PaT li:hover span{
+    display:inline-block;   
+}
+
 .a2 .content .Parks{
     color: rgb(79, 19, 111);
 }
