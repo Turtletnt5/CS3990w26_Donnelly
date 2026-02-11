@@ -59,7 +59,7 @@
     border-radius: 10px;
     text-wrap-mode: nowrap;
     padding: 5px;
-    transform: rotate3d(1,0.01,0,45deg);
+    transform: rotate3d(1,0.1,0,45deg);
     box-shadow: 0 5px 5px -2px black;
 }
 
