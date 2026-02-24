@@ -1,10 +1,60 @@
 *{
     margin: 0;
     padding: 0;
+    background-color: rgb(41, 46, 48);
 }
 
 
 .whole{
     display: grid;
-    grid-template-columns: 1% auto 1%;
+    grid-template-columns: [start] 2% [main-start] auto [main-end] 2% [end];
+    grid-template-rows: [header-top] 250px [header-bottom] auto [end];
+
+    .header{
+        background-image: url("/images/banner.png");
+        background-size: cover;
+        background-position: center;
+        grid-column: start / end;
+        grid-row: header-top / header-bottom;
+        display: inline-grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 25px;
+
+        .CSD{
+        grid-column: 1;
+        color: blueviolet;
+        font-size: 3em;
+        background-color: transparent;
+        justify-self: center;
+        text-align: center;
+        margin-top: 5rem;
+        }
+
+
+        .prog{
+            background-color: transparent;
+            color: white;
+            font-size: x-large;
+            padding: 2rem;
+
+            .browse{
+                background-color: orange;
+                padding: 2px;
+                border: black solid 2px;
+                margin-top: 5px;
+
+                a{
+                    color: white;
+                    text-decoration: none;
+                    background-color: inherit;
+                }
+            }
+        }
+
+
+    }
+
+    
+
+    
 }
