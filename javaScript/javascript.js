@@ -87,8 +87,8 @@ function rgbBarff(){
         if(t == 5 && bv <= 0) t=0;
 
         r.style.setProperty('--background_colour', 'rgba(' + rv.toString() + ', ' + gv.toString() + ', ' + bv.toString() + ', 1)');
-        r.style.setProperty('--font_colour', 'rgba(' + rv.toString() + ', ' + gv.toString() + ', ' + bv.toString() + ', 1)');
-        r.style.setProperty('--border_colour', 'rgba(' + rv.toString() + ', ' + gv.toString() + ', ' + bv.toString() + ', 1)');
+        r.style.setProperty('--font_colour', 'rgba(' + gv.toString() + ', ' + bv.toString() + ', ' + rv.toString() + ', 1)');
+        r.style.setProperty('--border_colour', 'rgba(' + bv.toString() + ', ' + rv.toString() + ', ' + gv.toString() + ', 1)');
     }
 }
 
