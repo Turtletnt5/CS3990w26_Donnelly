@@ -120,10 +120,10 @@
 .CScourses{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 50px;
+    gap: 40px;
 
     .course{
-        margin: 15px;
+        margin: 20px;
         padding: 12px;
         text-align: center;
         
