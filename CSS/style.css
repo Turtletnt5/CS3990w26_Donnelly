@@ -58,7 +58,7 @@
 
 .CSPrograms{
     grid-column: 2 / -2;
-    display: inline-grid;
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     margin: 10px;
@@ -116,4 +116,74 @@
     }
 }
 
-    
+
+.CScourses{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 50px;
+
+    .course{
+        margin: 15px;
+        padding: 12px;
+        text-align: center;
+        
+        .pic1, .pic2, .pic3, .pic4{
+            background-size: cover;
+            background-position: center;
+            height: 150px;
+            position: relative;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            transition: width 4s;
+        }
+
+        p{
+            margin: 10px;
+        }
+
+        .credits1, .credits2, .credits3, .credits4{
+            opacity: 0;
+        }
+
+        .pic1{
+            background-image: url("/images/webdev.jpg");
+        }
+
+        .pic2{
+            background-image: url("/images/programParadigms.jpg");
+        }
+
+        .pic3{
+            background-image: url("/images/imageProcessing.jpg");
+        }
+
+        .pic4{
+            background-image: url("/images/databases.jpg");
+        }
+
+        .pic1:hover, .pic2:hover, .pic3:hover, .pic4:hover{
+            scale: 1.2;
+        }
+
+        &:has(.pic1:hover) .credits1{
+            opacity: 1;
+        }
+
+        &:has(.pic2:hover) .credits2{
+            opacity: 1;
+        }
+
+        &:has(.pic3:hover) .credits3{
+            opacity: 1;
+        }
+
+        &:has(.pic4:hover) .credits4{
+            opacity: 1;
+        }
+
+
+    }
+
+
+
+}
