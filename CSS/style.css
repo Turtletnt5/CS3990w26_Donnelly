@@ -16,7 +16,7 @@
 
 .header{
     order: 1;
-    background-image: url("/images/banner.png");
+    background-image: url("../images/banner.png");
     background-size: cover;
     background-position: center;
     grid-column: start / end;
@@ -97,15 +97,15 @@
         }
 
         .pic1{
-            background-image: url(/images/keyboard.png);
+            background-image: url(../images/keyboard.png);
         }
 
         .pic2{
-            background-image: url(/images/server.png);
+            background-image: url(../images/server.png);
         }
 
         .pic3{
-            background-image: url(/images/cpu.png);
+            background-image: url(../images/cpu.png);
         }
 
         .link{
@@ -156,19 +156,19 @@
         }
 
         .pic1{
-            background-image: url("/images/webdev.jpg");
+            background-image: url("../images/webdev.jpg");
         }
 
         .pic2{
-            background-image: url("/images/programParadigms.jpg");
+            background-image: url("../images/programParadigms.jpg");
         }
 
         .pic3{
-            background-image: url("/images/imageProcessing.jpg");
+            background-image: url("../images/imageProcessing.jpg");
         }
 
         .pic4{
-            background-image: url("/images/databases.jpg");
+            background-image: url("../images/databases.jpg");
         }
 
         .pic1:hover, .pic2:hover, .pic3:hover, .pic4:hover{
