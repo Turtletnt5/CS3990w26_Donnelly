@@ -156,19 +156,19 @@
         }
 
         .pic1{
-            background-image: url("./images/webdev.jpg");
+            background-image: url("/images/webdev.jpg");
         }
 
         .pic2{
-            background-image: url("./images/programParadigms.jpg");
+            background-image: url("/images/programParadigms.jpg");
         }
 
         .pic3{
-            background-image: url("./images/imageProcessing.jpg");
+            background-image: url("/images/imageProcessing.jpg");
         }
 
         .pic4{
-            background-image: url("./images/databases.jpg");
+            background-image: url("/images/databases.jpg");
         }
 
         .pic1:hover, .pic2:hover, .pic3:hover, .pic4:hover{
