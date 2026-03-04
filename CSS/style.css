@@ -2,6 +2,8 @@
     --background_colour: rgb(9, 24, 31);
     --font_colour: rgb(255, 255, 255);
     --border_colour: rgb(255, 255, 255);
+
+
 }
 
 
@@ -17,7 +19,7 @@
 .menuBar{
 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(50px, 100px));
+    grid-template-columns: repeat(auto-fit, minmax(100px, 150px));
     gap: 25px;
     background-color: rebeccapurple;
     padding: 10px;
@@ -38,6 +40,16 @@
         color: aquamarine;
     }
 
+}
+
+.content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 25px;
+
+    img{
+        width: 100%;
+    }
 
 
 
