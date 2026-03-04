@@ -1,0 +1,44 @@
+:root{
+    --background_colour: rgb(9, 24, 31);
+    --font_colour: rgb(255, 255, 255);
+    --border_colour: rgb(255, 255, 255);
+}
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--background_colour);
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--font_colour);
+}
+
+
+.menuBar{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 100px));
+    gap: 25px;
+    background-color: rebeccapurple;
+    padding: 10px;
+
+    a{
+        padding: 10px;
+        background-color: var(--background_colour);
+        border: 3px var(--border_colour) groove;
+        text-align: center;
+
+    }
+
+    a:hover{
+        background-color: darkmagenta;
+    }
+
+    a:visited{
+        color: aquamarine;
+    }
+
+
+
+
+}
