@@ -36,9 +36,11 @@ export default class News {
         for(let i = 0; i < this.likes; i++){
             stars.textContent += '⭐';
         }
-        stars.style.textWrap = 'pretty';
+        stars.style.textWrap = 'wrap';
+        stars.style.overflowWrap = 'break-word';
 
         image.src = this.image;
+        image.style.width = '75%';
         description.textContent = this.description;
         likes.textContent = this.likes + ' Likes'
         likes.onclick = () => {
