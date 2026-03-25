@@ -40,7 +40,7 @@ export default class News {
         stars.style.overflowWrap = 'break-word';
 
         image.src = this.image;
-        image.style.width = '75%';
+        image.style.width = 'minmax(100px, 0.5fr)';
         description.textContent = this.description;
         likes.textContent = this.likes + ' Likes'
         likes.onclick = () => {
