@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.menu::before {
+    content: "▶";
+}
+
+.menu{
+.menuItems {
+    display: none;
+    padding-left: 10px;
+
+    p{
+        padding-left: 10px;
+    }
+}
+
+}
+
+.display{
+
+}

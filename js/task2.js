@@ -19,7 +19,7 @@ function setTextColour(colour, SetColour = false){
     }
 }
 
-// Single event listener on the parent container
+
 document.querySelector('.colourSelect').addEventListener('click', function(event) {
     if (event.target.type === 'button') {
         const rgb = event.target.style.backgroundColor;
