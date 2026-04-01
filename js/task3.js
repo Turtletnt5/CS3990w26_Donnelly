@@ -38,9 +38,13 @@ function toggleMenu() {
         document.getElementById('display').innerHTML = "";
         let p = document.querySelectorAll('.menuItems p');
         p.forEach(p => p.style.color = 'black');
+        document.getElementById('menuIcon').innerHTML = '▶';
+
     } else {
 
         menuItems.style.display = 'block';
+
+        document.getElementById('menuIcon').innerHTML = '▼';
     }
 
     menuOpen = !menuOpen;
