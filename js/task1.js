@@ -58,6 +58,7 @@ class News {
         title.textContent = this.title;
         description.textContent = this.description;
         removeButton.textContent = 'Remove';
+        removeButton.addEventListener('click', () => this.removeNews());
         this.div.appendChild(title);
         this.div.appendChild(description);
         this.div.appendChild(removeButton);
