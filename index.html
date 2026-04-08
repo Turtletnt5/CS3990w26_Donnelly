@@ -2,18 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Assignment 8 homepage</title>
+    <title>Final Project</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<a href="html/task1.html">Task 1</a>
-<br>
-<a href="html/task2.html">Task 2</a>
-<br>
-<a href="html/task3.html">Task 3</a>
-<br>
-<a href="html/task4.html">Task 4</a>
-<br>
+<h1>Final Project: Game-based Quiz</h1>
+<button onclick="startGame()" class="startButton" id="startButton"><span>Start Game</span></button>
 
+<h2 class="score">Your Score: <span id="score">0</span></h2>
+<h2 class="stars" id="stars"></h2>
+<br>
+<h2 class="timer"><span id="timer">0</span> seconds left</h2>
+
+<div class="gameContainer" id="gameContainer">
+
+    <div class="gamespace" id="gamespace">
+
+
+
+    </div>
+
+</div>
+<script type="module" src="js/gameRunner.js"></script>
 </body>
 </html>
