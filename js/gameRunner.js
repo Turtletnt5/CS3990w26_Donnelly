@@ -1,4 +1,4 @@
-import Card, { multipleChoiceCard, instantCard } from './card.js';
+import { multipleChoiceCard, instantCard } from './card.js';
 import { cardData } from '../data/cardData.js';
 
 let timer;
