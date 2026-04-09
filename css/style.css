@@ -24,7 +24,7 @@
 
 }
 
-.score,.stars{
+.score,.stars,.message{
 
     background: linear-gradient(to right, #ff00b6, #ffd600);
     -webkit-background-clip: text;
@@ -39,6 +39,7 @@
 
 
 
+
 .timer{
     background: linear-gradient(to right, #ffd600, #ff00b6);
     -webkit-background-clip: text;
@@ -48,6 +49,14 @@
 
     span {
         display: inline-block;
+    }
+
+    .info{
+        font-size: medium;
+        color: white;
+        background-color: rebeccapurple;
+        -webkit-background-clip: unset;
+        -webkit-text-fill-color: white;
     }
 }
 

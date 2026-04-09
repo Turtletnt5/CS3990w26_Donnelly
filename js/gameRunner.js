@@ -60,8 +60,8 @@ function loadAllCards() {
 
     cards = [];
     cardData.forEach(card => {
-        if (card.Type == 'Multiple Choice') cards.push(new multipleChoiceCard(card.Title, card.Description, card.Options, card.Answers, document.getElementById('gamespace'), score));
-        if (card.Type == 'Instant Card') cards.push(new instantCard(card.Title, card.Description, card.Points, document.getElementById('gamespace'), score));
+        if (card.Type == 'Multiple Choice') cards.push(new multipleChoiceCard(card.Title, card.Description, card.Options, card.Answers, document.getElementById('gamespace'), score, document.getElementById('message'), document.getElementById('info')));
+        if (card.Type == 'Instant Card') cards.push(new instantCard(card.Title, card.Description, card.Points, document.getElementById('gamespace'), score, document.getElementById('message'),document.getElementById('info')));
 
     });
 
@@ -76,8 +76,8 @@ function loadCards(){
     }
 
     randomCards.forEach(card => {
-        if (card.Type == 'Multiple Choice') cards.push(new multipleChoiceCard(card.Title, card.Description, card.Options, card.Answers, document.getElementById('gamespace'), score));
-        if (card.Type == 'Instant Card') cards.push(new instantCard(card.Title, card.Description, card.Points, document.getElementById('gamespace'), score));
+        if (card.Type == 'Multiple Choice') cards.push(new multipleChoiceCard(card.Title, card.Description, card.Options, card.Answers, document.getElementById('gamespace'), score, document.getElementById('message'),document.getElementById('info')));
+        if (card.Type == 'Instant Card') cards.push(new instantCard(card.Title, card.Description, card.Points, document.getElementById('gamespace'), score, document.getElementById('message'),document.getElementById('info')));
     });
 
 }

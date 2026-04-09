@@ -2,13 +2,15 @@
 
 export default class Card {
 
-    constructor(Title, Description,target) {
+    constructor(Title, Description,target, message, info) {
         this.title = Title;
         this.description = Description;
         this.isFlipped = false;
         this.target = target;
         this.card = null;
         this.completed = false;
+        this.message = message;
+        this.info = info;
     }
 
     flip() {
@@ -25,8 +27,12 @@ export default class Card {
                 this.flip();
                 this.showCard(extra);
                 this.card.removeEventListener('click', clickHandler);
+                setTimeout(() => {
+                    this.card.addEventListener('click', (event) => this.secondClick(event));
+                }, 1000);
             };
             this.card.addEventListener('click', clickHandler);
+
         }
 
         if(this.isFlipped) {
@@ -45,11 +51,30 @@ export default class Card {
 
         
     }
+
+    showMessage(text) {
+        this.message.textContent = text;
+        setTimeout(() => {
+            this.message.textContent = '';
+        }, 5000);
+    }
+
+    showInfo(text) {
+        this.info.textContent = text;
+        setTimeout(() => {
+            this.info.textContent = '';
+        }, 5000);
+    }
+
+    secondClick(event){
+        this.showMessage('You have already completed this card');
+    }
+
 }
 
 export class multipleChoiceCard extends Card {
-    constructor(Title, Question, Options, Answer, target, Score) {
-        super(Title, Question, target);
+    constructor(Title, Question, Options, Answer, target, Score, message, info) {
+        super(Title, Question, target, message, info);
         this.options = Options;
         this.answer = Answer;
         this.score = Score;
@@ -103,13 +128,33 @@ export class multipleChoiceCard extends Card {
                 }
             }
         })
+
+        if(correct) {
+            this.showMessage('You answered Correct!');
+            this.showInfo('You have earned 1 point');
+        }else{
+            this.showMessage('You answered Incorrect!');
+            this.showInfo('You have not earned any points');
+        }
+
         this.completed = true;
+    }
+
+    secondClick(event) {
+
+        if(event.target.tagName === 'DIV' || event.target.tagName === 'UL') {
+            if (this.completed) {
+                this.showMessage('You have already completed this card');
+            } else {
+                this.showMessage('Select your answer and check it to see if you are correct');
+            }
+        }
     }
 }
 
 export class instantCard extends Card {
-    constructor(Title, Description, points, target, score) {
-        super(Title, Description, target);
+    constructor(Title, Description, points, target, score, message, info) {
+        super(Title, Description, target, message, info);
         this.points = points;
         this.score = score;
         this.firstFlip = true;
@@ -121,8 +166,21 @@ export class instantCard extends Card {
             this.score[0] += this.points;
             this.firstFlip = false;
             this.completed = true;
+            this.showMessage('You have activated an instant card');
+            if(this.points > 0) {
+                this.showInfo('You have earned ' + this.points + ' points');
+            } else if (this.points < 0){
+                this.showInfo('You have lost ' + (this.points * -1) + ' points');
+            }
+            else{
+                this.showInfo('You have not earned any points');
+            }
         }
 
         super.showCard(extra);
+    }
+
+    secondClick(event) {
+        this.showMessage('You can only activate this card once.')
     }
 }
