@@ -1,0 +1,20 @@
+
+#courses {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10px, max-content)) ;
+    gap: 10px;
+    background-color: #06a06d;
+    padding: 5px;
+
+    li{
+        list-style-type: none;
+        padding: 0 10px ;
+        background-color: #023d2a;
+        color: #50d5a2;
+    }
+}
+
+#courseDesc {
+    background-color: #7fffd4;
+    padding: 5px;
+}
