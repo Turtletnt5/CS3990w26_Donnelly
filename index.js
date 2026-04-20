@@ -56,9 +56,10 @@ class course{
 
         let courseDesc = document.getElementById('courseDesc');
         courseDesc.textContent = this.desc;
+        courseDesc.appendChild(document.createElement('br'));
         let courseImg = document.createElement('img');
         courseImg.src = this.img;
-        courseImg.style.width = "100%";
+        courseImg.style.width = "50%";
         courseDesc.appendChild(courseImg);
 
         let coursePrereqs = document.getElementById('coursePrereqs');
